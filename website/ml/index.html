@@ -1,20 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SafeWatch — ML Emergency Detection Demo | Team FLUEX</title>
-    <meta name="description" content="Live ML inference demo for SafeWatch wearable safety system. From 4 minutes to 8 seconds. Passive biometric emergency detection by Team FLUEX." />
-    <meta property="og:title" content="SafeWatch — 8 Seconds vs 4 Minutes" />
-    <meta property="og:description" content="Watch the ML model detect emergencies in real-time. No button press required." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <script type="module" crossorigin src="/ml/assets/index-jP0lx04x.js"></script>
-    <link rel="stylesheet" crossorigin href="/ml/assets/index-BhdKF2YS.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Fluex ML API Documentation | Team FLUEX</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css">
+    <style>
+        html { box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
+        body { margin: 0; background: #1a1a1a; }
+        /* Dark mode overrides for Swagger UI */
+        .swagger-ui { filter: invert(88%) hue-rotate(180deg); background: #fff; }
+        .swagger-ui .topbar { display: none; }
+    </style>
+</head>
+<body>
+    <div id="swagger-ui"></div>
+    <script src="https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+    <script>
+        window.onload = function() {
+            const ui = SwaggerUIBundle({
+                url: "openapi.json",
+                dom_id: '#swagger-ui',
+                deepLinking: true,
+                presets: [
+                    SwaggerUIBundle.presets.apis,
+                ],
+                layout: "BaseLayout"
+            });
+            window.ui = ui;
+        };
+    </script>
+</body>
 </html>
