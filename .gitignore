@@ -1,0 +1,46 @@
+# Compiled / runtime artifacts
+*.tflite
+*.tflite.h
+build/
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+.venv/
+venv/
+env/
+*.ipynb_checkpoints
+
+# Node / npm
+node_modules/
+*.lock
+.env
+.env.local
+.env.production
+
+# React Native
+.expo/
+android/
+ios/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Model weights (large binaries)
+*.h5
+*.pb
+ml/model/weights_*.bin
+
+# Misc
+*.swp
+*.swo
