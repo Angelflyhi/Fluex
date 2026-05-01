@@ -1,0 +1,8 @@
+{
+  "generated_at_utc": "2026-04-27T04:13:38.808213+00:00",
+  "demo_dataset": "C:\\Users\\PP\\OneDrive\\Documents\\Angel\\distress-edge-ml-prototype\\data\\demo_sensor_windows.csv",
+  "samples": 16,
+  "alert_accuracy_vs_expected": 0.875,
+  "predicted_alert_rate": 0.25,
+  "mean_distress_probability": 0.27326036407814064
+}

@@ -104,6 +104,24 @@ fluex/
 - **Size:** ~140KB quantized TFLite
 - **Training data:** FallAllD dataset (60+ subjects, 6 fall types)
 
+### Distress Edge ML Prototype (Week-1 Personalization)
+
+We have also integrated an edge-first personalized Random Forest model that learns a user's baseline in the first 7 days to reduce false positives.
+
+**Here are all data sources used by this codebase and where to get them:**
+
+*   **UCI Accelerometer Gyro Mobile Phone (id=755)**
+    *   Used in code as: `fetch_ucirepo(id=755)`
+    *   Source: [UCI Dataset 755](https://archive.ics.uci.edu/dataset/755)
+*   **UCI Multivariate Gait Data (id=760)**
+    *   Used in code as: `fetch_ucirepo(id=760)`
+    *   Source: [UCI Dataset 760](https://archive.ics.uci.edu/dataset/760)
+*   **UCI NHANES Age Prediction Subset (id=887)**
+    *   Used in code as: `fetch_ucirepo(id=887)`
+    *   Source: [UCI Dataset 887](https://archive.ics.uci.edu/dataset/887)
+*   **Synthetic fallback dataset (generated, not downloaded)**
+    *   Built by: `src/simulate_data.py` (`generate_dataset(...)`)
+    *   Purpose: fallback/training augmentation when open data is unavailable
 ### Emergency Score Fusion
 
 ```

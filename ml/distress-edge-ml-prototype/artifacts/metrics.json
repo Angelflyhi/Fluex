@@ -1,0 +1,31 @@
+{
+  "data_mode": "open_datasets",
+  "dataset_rows_total": 74269,
+  "dataset_rows_train": 64501,
+  "dataset_rows_test": 9768,
+  "dataset_sources": [
+    "UCI-AGMP-755",
+    "UCI-GAIT-760",
+    "UCI-NHANES-887"
+  ],
+  "global_threshold_0_5": {
+    "roc_auc": 0.9662261700012337,
+    "precision": 0.3347457627118644,
+    "recall": 0.9713114754098361,
+    "f1": 0.49789915966386555,
+    "false_positive_rate": 0.15637450199203187
+  },
+  "personalized_week1_thresholds": {
+    "roc_auc": 0.9662261700012337,
+    "precision": 0.5448369565217391,
+    "recall": 0.5478142076502732,
+    "f1": 0.5463215258855586,
+    "false_positive_rate": 0.03707392651615759
+  },
+  "emergency_score_alert_rate": 0.0,
+  "target_spec": {
+    "inference_latency_goal_ms": 12,
+    "false_positive_goal_pct": 2.5,
+    "model_runtime": "TensorFlow Lite Micro compatible pipeline"
+  }
+}

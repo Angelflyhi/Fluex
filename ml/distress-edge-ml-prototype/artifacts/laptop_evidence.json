@@ -1,0 +1,54 @@
+{
+  "generated_at_utc": "2026-04-27T04:10:39.726053+00:00",
+  "execution_device": "Laptop/PC (Python local runtime)",
+  "feature_order": [
+    "fall_g",
+    "impact_duration_ms",
+    "gyro_spike_dps",
+    "hr_bpm",
+    "hrv_rmssd",
+    "spo2",
+    "skin_temp_c",
+    "immobility_min",
+    "posture_change_count",
+    "gps_speed_mps",
+    "gps_jitter_m",
+    "night_hour_flag",
+    "step_rate_spm"
+  ],
+  "dataset_sources": [
+    "UCI-AGMP-755",
+    "UCI-GAIT-760",
+    "UCI-NHANES-887"
+  ],
+  "training_rows_total": 74269,
+  "personalized_false_positive_rate": 0.03707392651615759,
+  "roc_auc": 0.9662261700012337,
+  "scenario_results": [
+    {
+      "scenario": "normal_walk",
+      "distress_probability": 0.4281,
+      "inference_latency_ms": 58.721,
+      "emergency_score": 0.0,
+      "emergency_trigger": false
+    },
+    {
+      "scenario": "possible_fall_distress",
+      "distress_probability": 0.5437,
+      "inference_latency_ms": 33.916,
+      "emergency_score": 1.0,
+      "emergency_trigger": true
+    },
+    {
+      "scenario": "night_immobility_only",
+      "distress_probability": 0.1147,
+      "inference_latency_ms": 33.353,
+      "emergency_score": 0.25,
+      "emergency_trigger": false
+    }
+  ],
+  "benchmark": {
+    "samples": 1000,
+    "average_inference_ms_per_sample": 0.046
+  }
+}
