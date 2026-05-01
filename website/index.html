@@ -1,19 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SafeWatch — ML Emergency Detection Demo | Team FLUEX</title>
-    <meta name="description" content="Live ML inference demo for SafeWatch wearable safety system. From 4 minutes to 8 seconds. Passive biometric emergency detection by Team FLUEX." />
-    <meta property="og:title" content="SafeWatch — 8 Seconds vs 4 Minutes" />
-    <meta property="og:description" content="Watch the ML model detect emergencies in real-time. No button press required." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluex | Smart Wearable Safety System</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="description" content="A multi-modal wearable safety device that detects falls and physiological emergencies in real time.">
+</head>
+<body>
+    <div class="scroll-container">
+        <div class="canvas-container">
+            <canvas id="hero-lightpass"></canvas>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <p>Scroll to explore</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <section class="section" id="intro">
+                <div class="badge">Innovation</div>
+                <h1>Fluex</h1>
+                <p>A multi-modal wearable safety device that detects falls and physiological emergencies in real time.</p>
+                <a href="/ml/" class="ml-btn">Test ML Model</a>
+                <p style="font-size: 0.8rem; margin-top: 20px; color: #888;">Built by Solo Team Leader Angel of Team Fluex</p>
+            </section>
+            
+            <section class="section" id="passive">
+                <div class="badge">Sensing</div>
+                <h2>Awareness</h2>
+                <p>Equipped with an nRF52840 MCU, ICM-42688 IMU, and MAX30102 PPG sensor for accurate biometric tracking.</p>
+            </section>
+            
+            <section class="section" id="detection">
+                <div class="badge">Edge AI</div>
+                <h2>Neural Precision</h2>
+                <p>On-device CNN processes 6-DOF IMU data using TensorFlow Lite Micro, combined with an edge-first personalized Random Forest model.</p>
+            </section>
+            
+            <section class="section" id="alerts">
+                <div class="badge">Rapid Response</div>
+                <h2>Total Peace</h2>
+                <p>Automatically broadcasts alerts to emergency contacts via BLE and SMS when physiological anomalies or falls are detected.</p>
+            </section>
+        </div>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+</body>
 </html>
